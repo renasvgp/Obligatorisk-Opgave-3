@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- https://www.bootstrapcdn.com/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Say Hello again</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>string manipulation</h1>
+    </div>
+
+    <div id="app">
+        <input id="inputField" v-model="word" placeholder="Name">
+        <button id="button" v-on:click="show()" class="btn btn-primary">Do it!</button>
+        <div id="outputField" v-for="word in result">{{word}}</div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
